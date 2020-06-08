@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@android:dimen/app_icon_size"
+    android:paddingLeft="@android:dimen/app_icon_size"
+    android:paddingRight="@android:dimen/app_icon_size"
+    android:paddingTop="@android:dimen/app_icon_size"
+    tools:context="com.example.serialport.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/serial_port"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="311dp"
+        android:layout_height="173dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="300dp"
+        android:background="#FFFFFF"
+        android:gravity="bottom"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:ems="10"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSend"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonSend"
+        style="?borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:text="@string/send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KotlinUsb</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="connect">CONNECT</string>
+    <string name="disconnect">DISCONNECT</string>
+</resources>

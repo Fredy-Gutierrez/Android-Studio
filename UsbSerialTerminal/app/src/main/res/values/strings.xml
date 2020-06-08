@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UsbSerialTerminal</string>
+    <string name="button_send">Send</string>
+    <string name="button_baudrate">Baudrate</string>
+    <string name="hint_baudrate">hind_baudrate</string>
+    <string name="msg_not_connect">not conected</string>
+</resources>
